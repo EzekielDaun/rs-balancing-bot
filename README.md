@@ -18,7 +18,7 @@ The robot takes the angle by reading the raw accelerometer in MPU6050 and compar
 
 - The [dcmimu](https://crates.io/crates/dcmimu) crate applies an algorithm to calculate the position. However when it compiles, the binary is too large to be written into the flash.
 
-- The Digital Motion Processor (DMP) integrated in the MPU6050 should be a better solution. It fuses the accelerometer and gyroscope data together to minimize the effects of errors inherent in each sensor. It is commonly used in many similar projects and is also chosen in the robot kit's example code. The provided Motion Driver includes the C usage. However, the existing Rust crate [crate](https://crates.io/crates/drogue-mpu-6050) doesn't works well with the STM32F1xx-HAL abstraction.
+- The Digital Motion Processor (DMP) integrated in the MPU6050 should be a better solution. It fuses the accelerometer and gyroscope data together to minimize the effects of errors inherent in each sensor. It is commonly used in many similar projects and is also chosen in the robot kit's example code. The provided Motion Driver includes the C usage. However, the existing Rust [crate](https://crates.io/crates/drogue-mpu-6050) doesn't works well with the STM32F1xx-HAL abstraction.
 
 ## Next Step
 
